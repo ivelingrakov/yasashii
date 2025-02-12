@@ -1,0 +1,42 @@
+@import '@ya/styles/variables.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 1px 2px $ya-box-shadow;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    h1 {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        letter-spacing: -0.02em;
+    }
+
+    :global(.ant-btn) {
+        min-width: 100px;
+        height: 40px;
+        border-radius: 8px;
+        font-size: 0.9rem;
+    }
+
+    :global(.ant-space) {
+        gap: 12px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem;
+
+        h1 {
+            font-size: 1.25rem;
+        }
+    }
+}
