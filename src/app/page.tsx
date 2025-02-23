@@ -1,10 +1,10 @@
 'use client';
 
+import Header from '@ya/components/Header/Header';
+
 import styles from './page.module.css';
-import Header from '@/app/components/Header/Header';
 
 export default function Home() {
-
   return (
     <div className={styles.container}>
       <Header />
